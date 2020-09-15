@@ -27,40 +27,39 @@
             </div>
         </div>
     </div>
-    <script src="{{asset('plugins/chartjs-old/Chart.min.js')}}"></script>
-    <script src="{{asset ('plugins/jquery/jquery.js')}}"></script>
-    <script>
-        $(function() {
-            var verifiedOrder = "<?php echo $verifiedorder; ?>";
-            var notVerifiedOrder = "<?php echo $notverifiedorder; ?>";
+</div>
+<script>
+    $(function() {
+        var verifiedOrder = "<?php echo $verifiedorder; ?>";
+        var notVerifiedOrder = "<?php echo $notverifiedorder; ?>";
 
-            var pieChartCanvas = $('#pieChart1').get(0).getContext('2d')
-            var pieChart = new Chart(pieChartCanvas)
-            var PieData = [{
-                    value: verifiedOrder,
-                    color: '#00a65a',
-                    highlight: '#00a65a',
-                    label: 'Verified Order'
-                },
-                {
-                    value: notVerifiedOrder,
-                    color: '#DC3545',
-                    highlight: '#DC3545',
-                    label: 'Not Verified Order'
-                }
-            ]
-            var pieOptions = {
-                segmentStrokeColor: '#fff',
-                segmentStrokeWidth: 2,
-                animationSteps: 100,
-                animationEasing: 'easeOutBounce',
-                animateRotate: true,
-                animateScale: true,
-                responsive: true,
-                maintainAspectRatio: true,
-                legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<segments.length; i++){%><li><span style="background-color:<%=segments[i].fillColor%>"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>'
+        var pieChartCanvas = $('#pieChart1').get(0).getContext('2d')
+        var pieChart = new Chart(pieChartCanvas)
+        var PieData = [{
+                value: verifiedOrder,
+                color: '#00a65a',
+                highlight: '#00a65a',
+                label: 'Verified Order'
+            },
+            {
+                value: notVerifiedOrder,
+                color: '#DC3545',
+                highlight: '#DC3545',
+                label: 'Not Verified Order'
             }
-            pieChart.Doughnut(PieData, pieOptions)
-        })
-    </script>
-    @endsection
+        ]
+        var pieOptions = {
+            segmentStrokeColor: '#fff',
+            segmentStrokeWidth: 2,
+            animationSteps: 100,
+            animationEasing: 'easeOutBounce',
+            animateRotate: true,
+            animateScale: true,
+            responsive: true,
+            maintainAspectRatio: true,
+            legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<segments.length; i++){%><li><span style="background-color:<%=segments[i].fillColor%>"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>'
+        }
+        pieChart.Doughnut(PieData, pieOptions)
+    })
+</script>
+@endsection
