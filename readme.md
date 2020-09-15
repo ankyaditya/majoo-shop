@@ -10,18 +10,22 @@
 ## Access The Website
 Access here: https:://localhost/majoo-shop/public/
 
+Auth for Admin:
+Email: admin@majoo.com
+Password: adminmajoo
+
 ## Majoo Shop Preview
 <h5 align='center'>Picture 1: Client Side</h5>
-![majoo-1](https://user-images.githubusercontent.com/51365534/93166904-a7510700-f749-11ea-8c2b-8e8a19aacf9d.JPG)
+<img src="https://user-images.githubusercontent.com/51365534/93166904-a7510700-f749-11ea-8c2b-8e8a19aacf9d.JPG">
 
 <h5 align='center'>Picture 2: Sign In</h5>
-![majoo-2](https://user-images.githubusercontent.com/51365534/93167001-dd8e8680-f749-11ea-8f64-5c9089bf8496.JPG)
+<img src="https://user-images.githubusercontent.com/51365534/93167001-dd8e8680-f749-11ea-8f64-5c9089bf8496.JPG">
 
 <h5 align='center'>Picture 3: Admin Dashboard</h5>
-![majoo-3](https://user-images.githubusercontent.com/51365534/93167076-06168080-f74a-11ea-8cb7-1f55e42713e4.JPG)
+<img src="https://user-images.githubusercontent.com/51365534/93167076-06168080-f74a-11ea-8cb7-1f55e42713e4.JPG">
 
 <h5 align='center'>Picture 4: Product Management</h5>
-![majoo-4](https://user-images.githubusercontent.com/51365534/93167091-10387f00-f74a-11ea-91bb-713213981369.JPG)
+<img src="https://user-images.githubusercontent.com/51365534/93167091-10387f00-f74a-11ea-91bb-713213981369.JPG">
 
 <h5 align='center'>Picture 5: Order Management</h5>
-![majoo-5](https://user-images.githubusercontent.com/51365534/93167137-2a725d00-f74a-11ea-9b2c-d46781bce5b3.JPG)
+<img src="https://user-images.githubusercontent.com/51365534/93167137-2a725d00-f74a-11ea-9b2c-d46781bce5b3.JPG">
